@@ -77,37 +77,43 @@ print(a(3,5))
 #11
 b = 500
 print(b)
+
 def a():
     b = 300
     print(b)
+
 print(b)
 a()
 print(b)
-#Prediccion: 500, 300, 500
+#Prediccion: 500, 500, 300, 500
 
 #12
 b = 500
 print(b)
+
 def a():
     b = 300
     print(b)
     return b
+
 print(b)
 a()
 print(b)
-#Prediccion: 500, 300, 500
+#Prediccion: 500, 500, 300, 500
 
 #13
 b = 500
 print(b)
+
 def a():
     b = 300
     print(b)
     return b
+
 print(b)
 b=a()
 print(b)
-#Prediccion: 500, 500, 300, 500
+#Prediccion: 500, 500, 300, 300
 
 #14
 def a():
