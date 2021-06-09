@@ -115,7 +115,8 @@ def valores(array):
 valores([37,2,1, -9])
 
 
-#9Lista inversa : crea una función que tome una lista y la devuelva con los valores invertidos. Haz esto sin crear una segunda lista. (Se sabe que este desafío aparece durante las entrevistas técnicas básicas).
+#9Lista inversa : crea una función que tome una lista y la devuelva con los valores invertidos. 
+# Haz esto sin crear una segunda lista. (Se sabe que este desafío aparece durante las entrevistas técnicas básicas).
 #Ejemplo: reverse_list ([37,2,1, -9]) debería devolver [-9,1,2,37]
 
 def rever(lista):
@@ -124,3 +125,20 @@ mylist = [1, 2, 3, 4,]
 mylist2 = [6, 3, -2]   
 print(rever(mylist))
 print(rever(mylist2))
+
+def revertir(array):
+    array2 = []
+    for x in range(len(array)-1, -1, -1):
+        array2.append(array[x])
+    print(array2)
+revertir([37,2,1, -9])
+
+def revertir(array):
+    temp = 0
+    long = int(len(array)/2)
+    for x in range(long):
+        temp = array[x]
+        array[x] = array[len(array) -1- x]
+        array[len(array) -1 - x] = temp
+    print(array)
+revertir([37,2,1,-9])
